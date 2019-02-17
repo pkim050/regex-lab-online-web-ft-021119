@@ -1,5 +1,11 @@
 def starts_with_a_vowel?(word)
-
+  puts word
+  puts "#{word[0]} + #{word[1]}"
+  if word.match(/^[aeiou]/) != 0
+    return false if word[0] == word[1]
+    return true
+  end
+  return false
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
