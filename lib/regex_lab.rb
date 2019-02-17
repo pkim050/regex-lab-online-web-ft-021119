@@ -1,6 +1,7 @@
 
 def starts_with_a_vowel?(word)
   puts word
+  binding.pry
   return true if word.match(/\A[aeiouAEIOU]/) != 0
   return false
 end
